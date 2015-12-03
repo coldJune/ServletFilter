@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+<project name="antQs" basedir="." default="">
+	<property name="src" value="WEB-INF\src"/>
+	<property name="classes" value="WEB-INF\classes"/>
+	<property name="dest" value="dest"/>
+	<path id="classpath">
+		<pathelement path="${classes}"/>
+	</path>
+	<target name="compile" description="编译java源文件">
+		<delete dir="${classes}"/>
+		<mkdir dir="${classes}"/>
+		<javac destdir="${classes}" debug="true" includeantruntime="yes"
+		deprecation="false" optimize="false" failonerror="true">
+		<src path="${src}"/>
+		<classpath refid="classpath"/>
+		</javac>
+	</target>
+	
+</project>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="GBK"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project name="antQs" basedir="." default="">
 	<property name="src" value="WEB-INF\src"/>
 	<property name="classes" value="WEB-INF\classes"/>
